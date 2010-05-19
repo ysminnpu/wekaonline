@@ -5,6 +5,4 @@
 
 ==MySQL=
  * Links
-   # Installing MySQL in Ubuntu(Spanish link)
-[http://www.guia-ubuntu.org/index.php?title=MySQL#Instalaci.C3.B3n]
-   # Another
+   # Installing MySQL in Ubuntu(Spanish link) [http://www.guia-ubuntu.org/index.php?title=MySQL#Instalaci.C3.B3n]
