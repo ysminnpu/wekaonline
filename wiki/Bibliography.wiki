@@ -1,0 +1,9 @@
+#labels Phase-Design
+#We have every links about everything we use in the project here
+
+=Applications=
+
+==MySQL=
+
+#Installing MySQL in Ubuntu(Spanish link)
+http://www.guia-ubuntu.org/index.php?title=MySQL#Instalaci.C3.B3n
