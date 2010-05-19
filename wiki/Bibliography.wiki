@@ -2,11 +2,11 @@
 #We have every links about everything we use in the project here
 
 =Applications=
-
 ==MySQL=
  * Links
    # Installing MySQL in Ubuntu(Spanish link) [http://www.guia-ubuntu.org/index.php?title=MySQL#Instalaci.C3.B3n]
 
 =Programming Languages=
- * Ruby Links
+==Ruby== 
+ * Links
    # The first application in Ruby (Good documentation)[http://www.railstutorial.org/book#sec:the_first_application]
