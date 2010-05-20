@@ -2,14 +2,14 @@
 #it is the use cases discussion.
 =List of Use cases=
   * Algorithms subsystem
-    * Handle Algorithms-> It is the biggest use case every use case extend of this one.
+    * Handle Algorithms
              # Add Algorithm
              # Delete Algorithm
              # Load Algorithm
   * Challenges subsystem
   * Datasets subsystem
   * Experiments subsystem
-     * Handle Experiment -> It is the biggest use case every use case extend of this one.
+     * Handle Experiment
              # Read Experiment
              # Run Experiment
              # Set Experiment Settings.
