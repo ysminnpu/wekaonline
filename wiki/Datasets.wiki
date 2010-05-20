@@ -3,5 +3,5 @@
 =DONE=
 
 =TODO=
-==Loading==
-It will can load every type of file support in Weka: cvs,arff,c4.5... 
+==Uploading==
+It will can support every type of file support in Weka: cvs,arff,c4.5... 
