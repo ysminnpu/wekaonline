@@ -1,7 +1,0 @@
-#this topic contains everything about the users
-
-=Root=
-
-=Premier user=
-
-=Free user=
