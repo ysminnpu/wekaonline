@@ -12,6 +12,11 @@
              # Read challenge
              # Set challenge like resolved
   * Datasets subsystem
+     * Dataset Handler
+             # Upload dataset
+             # Download dataset
+             # Delete dataset
+             # Apply filter in dataset
   * Experiments subsystem
      * Experiment Handler
              # Read Experiment
@@ -20,4 +25,10 @@
   * Filter subsystem
   * Rankings subsystem
   * Transactions subsystem
-  * Users subsystempages
+  * Users subsystem
+
+=Descriptions=
+
+==Dataset subsystem==
+===Delete dataset===
+When someone try to delete a dataset the system will check if someone else used this dataset in any experiment. Then the system will send a notification to those users to say them if they want to host this dataset. If someone say yes the dataset will be rest in the deleter user and he will have more free space. Who accepted the notification to own the dataset will spend memory from his account and he will be the new owner.
