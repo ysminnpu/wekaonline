@@ -7,13 +7,13 @@
              # Delete Algorithm
              # Load Algorithm
   * Challenges subsystem
-# Datasets subsystem
-# Experiments subsystem
-     -Handle Experiment -> It is the biggest use case every use case extend of this one.
-            - Read Experiment
-            - Run Experiment
-            - Set Experiment Settings.
-# Filter subsystem
-# Rankings subsystem
-# Transactions subsystem
-# Users subsystempages
+  * Datasets subsystem
+  * Experiments subsystem
+     * Handle Experiment -> It is the biggest use case every use case extend of this one.
+             # Read Experiment
+             # Run Experiment
+             # Set Experiment Settings.
+  * Filter subsystem
+  * Rankings subsystem
+  * Transactions subsystem
+  * Users subsystempages
