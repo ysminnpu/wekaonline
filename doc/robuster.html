@@ -1,0 +1,37 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="en-gb">
+<title>CEO Online</title>
+</head>
+
+<body bgcolor="#000000" text="#FFFFBF" vlink="#990002" link="#990001">
+
+<h1> RoBuster: cross-validating to produce a test-ready training model </h1>
+
+<p> Field belief is that stratified sampling of instances for cross-validation (StratCV) produces the best (most robust) training models for testing the model against unseen test set.
+The option, substratified or free or fully random sampling (SubstratCV), where corresponding training and test sets (called 'folds') are not mutually stratified, we believe to better 
+'prepare' the classifier against variations (in class-distribution mainly but also average feature values) in the eventual test set. 
+
+<p> To support this we have found in contrast the following interesting things: 
+
+	<li> there is a marked difference in how classifiers react to stratified vs substratified CV 
+	whereby Decision Trees benefit from stratification more than Bayesian classifiers and that this (unfair) advantage increases with training volume
+	<li> the difference in training volume (90% in each CV test vs 100% in real test) may be significant for BAS, 
+	knowing from Founder's publications that classifiers are particularly sensitive to training volume
+
+<p> From this it follows that the best classifier emerging from CV tests may not be the best classifier in ultimate test situation.
+Based on tests with about 10 UCI datasets, the difference in performance was up to +/-3% which is enough for winning classifier to change.
+For instance when we ran two classifiers on the well-known iris dataset, 
+stratified CV predicted Naive Bayes (NB) to be the best algorithm (99%) by +6% over J48 but substratified CV suggested that their difference is only +1%.
+Still NB did better, but there were other datasets where the winning algorithm actually changed. 
+<p> For these compelling reasons we will be offering the option of substratified CV along with other guarantees for full robustness on this site
+as well as obviously producing our test results at the two CV options (i.e. names of the projects we ran). 
+(In fact, this can be seen already - not clean since we ran them a lot - by giving 'UCI.*' as project name and comparing results 
+for RmvFolds = substratified CV and StratRmvFolds = stratified CV!)
+<p> We also can present evidence whereby LOO (leave-one-out) type CV is overkill and a waste of time. 
+
+
+</body>
+</html>
