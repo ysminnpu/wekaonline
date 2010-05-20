@@ -1,0 +1,81 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="en-gb">
+<title>Weka Online Form </title>
+</head>
+
+<body bgcolor="#000000" text="#FFFFBF" vlink="#990002" link="#990001">
+
+<form name="formhandler" method="post"
+ action="http://compbio.mds.qmw.ac.uk/cgi-bin/ceo/cascader2.pl"
+enctype="multipart/form-data"> 
+
+<h1> <a href="http://www.cs.waikato.ac.nz/~ml/weka/">Weka</a> Online <img src="Title-Bird-Header.gif" align=center></h1> 
+
+<body>
+
+<p> Please have a quick read of <a href="documentation.pdf" target="main">instructions</a>.
+
+<br>
+<br>
+
+<table border=3 width=62% cols=2 bgcolor=#990000>
+
+<h3> Dataset </h3>
+<p> Here's a directory of <a href="http://www.ceodelegates.com/samples-arff/" target="main">sample ARFF datasets</a> from UCI library for you to download!
+
+<tr>
+<td>
+<input type="file" value="Browse" name="dataset-train" checked><br> 
+
+</tr>
+
+</table>
+<br>
+<table border=3 width=62% cols=2 bgcolor=#990000>
+<h3> Classifiers</h3>
+<p> We provide a couple of semi-strong light-to-run classifiers in the below textarea. 
+If you want, you could also try some that are often even stronger from <a href="clineup.html" target="main">this sample list of recommended strong classifiers per dataset type</a> 
+(kind of empirically proven rules of thumb on best classifier selection) !
+<tr><td>
+<textarea name="classifiers" cols="76" rows="4" wrap="off">
+weka.classifiers.bayes.NaiveBayes
+weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+weka.classifiers.trees.J48 -C 0.25 -M 2
+weka.classifiers.trees.SimpleCart -S 1 -M 2.0 -N 5 -C 1.0</textarea></td>
+</tr>
+
+</table>
+</select>
+
+<br>
+<font size=3>
+<table border=3 width=62% cols=2 bgcolor=#990004>
+<tr>
+<h3> User information </h3> 
+<p> Username should be the one you registered with. 
+<p> Project name is required to query for results (e.g. you might want to name projects 'dataset1-run1', 'dataset2-run2'). 
+Please do not use slash '/', whitespace ' ' or '_' in project names (e.g. MyName, MyProject not 'My Name', 'My Project', 'My_Project'). 
+<p> Fill in your email address here if you want an immediate notification of when project is finished. If not you can go to "Get results" page.
+<p> (We'll fix this so that after login you don't have to give username and email, only project name).
+
+<td> Username (*) 
+<td>	<input type="text" name="name" size="40"><br></tr>
+<tr><td> Project name (*) <td><input type="text" name="project" size="40" maxlength="20"><br></td>
+<tr> <td> E-mail address <td><input type="text" name="email" size="40" maxlength="40"><br> 
+</table>
+
+
+<p> Ok we're getting now ready to run Weka Online with classifiers you chose on the dataset. 
+You were given in your account activation email the script username/password so you'll need them now.
+
+<br><br>
+<input type="submit" value="Send"> 
+<input type="reset" value="Clear">
+
+</form>
+
+</body>
+</html>
