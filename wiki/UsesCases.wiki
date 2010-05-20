@@ -23,6 +23,11 @@
              # Run Experiment
              # Set Experiment Settings.
   * Filter subsystem
+     * Filter Handler
+             # Add filter
+             # Delete filter
+             # Read filter
+             # Apply filter in dataset
   * Rankings subsystem
   * Transactions subsystem
   * Users subsystem
