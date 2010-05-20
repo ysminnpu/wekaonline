@@ -1,0 +1,31 @@
+  <response method="/support/password/get" status="success">
+    <summary total="1" start="0" returned="1"/>
+    <list>
+      <object name="password">
+        <attribute name="id">2546</attribute>
+        <attribute name="server">
+          <object name="server">
+            <attribute name="id">2401</attribute>
+            <attribute name="name">Test Web Server</attribute>
+            <attribute name="description">Test Web Server</attribute>
+            <attribute name="ip">
+              <object name="ip">
+                <attribute name="id">138813</attribute>
+                <attribute name="ip">216.121.62.44</attribute>
+                <attribute name="subnet">216.121.62.32/255.255.255.240</attribute>
+                <attribute name="public">true</attribute>
+              </object>
+            </attribute>
+...
+            <attribute name="state">
+              <object name="option">
+                <attribute name="id">1</attribute>
+                <attribute name="name">Started</attribute>
+                <attribute name="description">Server is in active state.</attribute>
+              </object>
+            </attribute>
+...
+
+        <attribute name="applicationtype">os</attribute>
+        <attribute name="username">root</attribute>
+	<attribute name="password">6d5db078</attribute> # RED VALUE $pwd = /<attribute name=\"password\">$1/
