@@ -1,0 +1,81 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="en-gb">
+<title>CEO Query </title>
+</head>
+
+<body bgcolor="#000000" text="#FFFFBF" vlink="#990002" link="#990001">
+
+<!-- <h1> Query for results</h1> -->
+
+<form method="post" action="http://compbio.mds.qmw.ac.uk/renderer1.php"
+enctype="multipart/form-data">
+
+<h3> Accuracies of classifiers </h3> 
+
+<table border=0 width=50% bgcolor=#990002>
+<tr><td>User <td><input type="text" name="name" maxlength=40><br></tr>
+<td>Project <td><input type="text" name="project" maxlength=40><br></tr>
+</table>
+
+<input type="submit" value="Send"> 
+<input type="reset" value="Clear">
+
+
+</form>
+
+<form method="post" action="http://compbio.mds.qmw.ac.uk/renderer2.php"
+enctype="multipart/form-data">
+<hr>
+<h3> Errors at instances (CSV output) </h3>
+
+<table border=0 width=50% bgcolor=#990002>
+
+<tr><td>User <td><input type="text" name="name" maxlength=40><br>
+<td>Project <td><input type="text" name="project" maxlength=40><br></tr>
+<!-- <tr><td>Classifier (can use 'rlike' regexp here) <td><input type="text" name="classifier" ><br> -->
+
+</table>
+
+<input type="submit" value="Send"> 
+<input type="reset" value="Clear">
+
+</form>
+
+<form method="post" action="http://compbio.mds.qmw.ac.uk/renderer3.php"
+enctype="multipart/form-data">
+
+<hr>
+
+<h3> Dataset statistics (number of classes and instances)</h3>
+
+<table border=0 width=50% bgcolor=#990002>
+<tr><td>User <td><input type="text" name="name" maxlength=40><br>
+<td>Project <td><input type="text" name="project" maxlength=40><br></tr>
+</table>
+
+<input type="submit" value="Send"> 
+<input type="reset" value="Clear">
+</form>
+
+<hr>
+<form method="post" action="http://compbio.mds.qmw.ac.uk/renderer4.php"
+enctype="multipart/form-data">
+
+<h3> ROC, TP and FP rates per class </h3>
+
+<table border=0 width=50% bgcolor=#990002>
+<tr><td>User <td><input type="text" name="name" maxlength=40><br>
+<td>Project <td><input type="text" name="project" maxlength=40><br></tr>
+</table>
+<input type="submit" value="Send"> 
+<input type="reset" value="Clear">
+
+</form>
+
+</body>
+</html>
+
+
