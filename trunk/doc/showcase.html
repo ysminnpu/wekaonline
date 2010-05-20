@@ -1,0 +1,61 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="en-gb">
+<title>CEO Showcases </title>
+</head>
+
+<body bgcolor="#000000" text="#FFFFBF" vlink="#990002" link="#990001">
+
+<h1> Accuracy benchmarks (*) </h1>
+
+	<p> <u>+2% version</u>: CEO's precursor OE ('optimal ensembler') that deploys best algorithm selection (BAS) module obtained level of <b>+2-3%</b> on average per word in word sense disambiguation task on various Senseval datasets (see Saarikoski 2008a).
+	OE with BCS is built in with all CEO versions. We believe +4% over baseline can be obtained by 'cleverly ensembling' different WSD feature sets (e.g. n-grams and syntactic information). 
+	<a href="http://compbio.mds.qmw.ac.uk/renderer1b.php?project=24sf-ClassesSfs" target=main>Here</a> you can link to results of that project ('24sf-ClassesSfs').
+
+	<p> <u>+4% version</u>: With CEO using two-level class structure file and class-expert delegation, we have confirmed <b>+4%</b> gain over best single classifier (LibSVM) at 24-protein recognition task using two-level structure file. 
+	Same gain with 49-protein set (with multi-domain proteins) and the ultimate 407-superfamily dataset (= all proteins apart from multi-domain ones). 
+	In the light of confirmed results, class-expert delegation feature of CEO fetches a gain +1-2% 
+	but with further significant class structurality, gain is bound to rise to total of +3-4%.
+	(This +4% is the one we'll be launching as CEO v.1.)
+
+	<p> <u>Future</u>: We believe we can fetch up to +6 and +8 gain levels (depending on dataset of course) with our own innovations over time. 
+	With +8-10%, we need some help from the community (stronger or more suitable classification algorithms than are publicly available). 
+
+	<p> (*) Weka Online (with no CEO algorithm) will obviously fetch the accuracy of the best single classifier integrated in Weka Online, 
+	which by the way in turn is the baseline for CEO.
+	
+	<p> <u> Miscellaneous results: </u>
+	<li> Chlamydia dataset (two classes: 'yes-sick' and 'no-sick'): +0.2, using the two bayesians along with linear kernel SVM (this is just to show that CEO delivers higher gains the more there are classes, 
+	most likely climbing of gain is a logistic function of number of classes, i.e. s curve although 'amount of structurality' obviously has a significant effect too)
+
+	<li> With restricted classifier selection, gain of course drops. E.g. with just two Bayesian classifiers (NaiveBayes and BayesNet) the gain at 24-superfamily set was as high as +2.1%.
+
+<hr>
+
+<h1> Processing time benchmarks </h1>
+
+<p> We did a performance benchmark compared to a regular laptop/server where we 
+ran 4 classifiers (two bayesians and two decision trees) on a 24-class 
+dataset with 573 instances and 126 features. Timestamps showed the 
+following finishing times: local machine using Weka Experimenter finished 
+in 18 minutes as opposed to Weka Online in 3 minutes (when both were run on 
+Weka 3-5-6 and -xmx2000M). So ok classification projects get finished in 
+~80-90% of the time compared to a single (home or server) processor with 
+same memory capacity running Weka Experimenter. This owes mostly to 
+distributing the fold pairs to different processors but also to using Weka 
+commandline rather than GUI interfaces (no need to update the GUI while 
+running). To put that in real, plain terms, it means a 3-day regular 
+running project gets finished in 7-8 hours (or less, we have some ideas). 
+
+<p> Other benchmarks: 
+<li> all the weka classifiers compatible with nominal class and numeric features 
+(total 27 including two SVM and two END classifiers) on 24-protein dataset (as above). 
+-> <b> Finishing time: 23 minutes.</b> 
+<li> fold generation is 10-25% of total processing time (depending on size of dataset).
+
+<br>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="en-gb">
+<title>CEO Query </title>
+</head>
+
+<body bgcolor="#000000" text="#FFFFBF" vlink="#990002" link="#990001">
+
+<h1> Query forms (developper version) </h1>
+
+<form method="post" 
+action="http://compbio.mds.qmw.ac.uk/renderer1.php"
+enctype="multipart/form-data">
+
+<p> 1 - Accuracies </p>
+<table border=0 width=50% bgcolor=#990002>
+<tr><td>User <td><input type="text" name="name"><br></tr>
+<td>Project <td><input type="text" name="project"><br></tr>
+<br>
+<tr>
+<td>Level <td><input type="text" name="level" ><br>
+<td>Class <td><input type="text" name="class" ><br>
+<!-- <tr>
+<td>Classifier <td><input type="text" name="classifier" ><br> -->
+<tr>
+<!-- <td>Accuracy <td><input type="text" name="accuracy" ><br> -->
+<!-- <tr><td>Instance ID <td><input type="text" name="instID=name" ><br> 
+<tr>
+<td>Error flag ('+') <td><input type="text" name="error" ><br> -->
+<!-- 
+<tr><td>Group by <td>
+<select name="groupby" multiple=multiple size=7>
+<option value="user">user</option>
+<option value="project">project</option>
+<option value="dataset">dataset</option>
+<option value="instance">instance</option>
+<option value="classifier">classifier</option>
+</select></tr>
+<br> I guess this could be text search into db, 'contains x', i.e. that you could have "wsd*" (and presuming you have named all your wsd-projects with that prefix, those would come out.
+-->
+<tr>
+<!-- <td>Custom field (use 'as x' to name it) <td><input type="text" name="error" size=30> <br>
+Here e.g. harri can specify 'count(inst)/count(classes)' if he wants to calculate number of isntances per target.
+-->
+
+</table>
+
+<input type="submit" value="Send"> 
+<input type="reset" value="Clear">
+
+
+</form>
+
+<form method="post" action="http://compbio.mds.qmw.ac.uk/renderer2.php"
+enctype="multipart/form-data">
+<hr>
+<p> 2 - Errors at individual test instances </p>
+
+<table border=0 width=50% bgcolor=#990002>
+
+<tr><td>Project <td><input type="text" name="project" ><br></tr>
+<tr><td>Run <td><input type="text" name="run" ><br></tr>
+<tr><td>Level <td><input type="text" name="level" ><br>
+<td>Class <td><input type="text" name="class" ><br>
+<tr><td>Classifier <td><input type="text" name="classifier" ><br> 
+<tr><td>Error flag ('+') <td><input type="text" name="error" ><br>
+<tr><td>Actual class <td><input type="text" name="actual" ><br> 
+<td>Predicted class <td><input type="text" name="predicted" ><br>
+
+</table>
+
+<input type="submit" value="Send"> 
+<input type="reset" value="Clear">
+</form>
+
+
+<form method="post" action="http://compbio.mds.qmw.ac.uk/renderer4.php"
+enctype="multipart/form-data">
+<hr>
+
+<p> 4 - ROC results </p>
+
+<table border=0 width=50% bgcolor=#990002>
+<tr><td>Project <td><input type="text" name="project"><br></tr>
+</table>
+<input type="submit" value="Send"> 
+<input type="reset" value="Clear">
+
+</form>
+
+<hr>
+
+<table border=0 width=50% bgcolor=#990002>
+<form method="post" action="http://compbio.mds.qmw.ac.uk/renderer5.php"
+enctype="multipart/form-data">
+<h3> 5 - Projects and user list </h3>
+<p> Use '.*' to view all the public projects in results database. </p>
+<table border=0 width=50% bgcolor=#990002>
+<tr><td>User <td><input type="text" name="name" maxlength=30><br>
+<td>Project <td><input type="text" name="project" maxlength=30><br></tr>
+</table>
+<input type="submit" value="Send"> 
+<input type="reset" value="Clear">
+</form>
+
+</body>
+</html>
+
+

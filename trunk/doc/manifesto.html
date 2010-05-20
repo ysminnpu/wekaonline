@@ -1,0 +1,82 @@
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="en-gb">
+<title>CEO</title>
+</head>
+
+<body bgcolor="#000000" text="#FFFFBF" vlink="#990002" link="#990001">
+
+<h1> CEO manifesto </h1> 
+
+<p> Weka Online is a free utility for Weka users enabling users to utilise Weka over http (internet) at a good processing speed 
+(each fold test gets trained by a different processor in a supercluster). 
+<b><font size=4>Our aim is to extend Weka <a href="features.html" target=main>in various ways</a></font></b>
+to support the open-source side of classification practice.
+
+<p> CEO Online is a classification algorith, or rather a framework of classification algorithms that is not bound to Java (or other programming language) or Weka (or other machine-learning suite).
+In practice, it is bound only to the supported languages of Apache web server (perl,python,c++ etc.) and the variety of machine-learning (ML) algorithms programmed in them. 
+That from our viewpoint offers many opportunities to machine-learning practitioners and end-users: 
+i.e. the quicker it is to program and add your algorithm and use it in an ensemble of other integrated classifiers (not having to compile it with Weka for example), 
+the more quickly ML field advances to its goal of maximmum accuracy classification ('topline' rather than 'baseline'). 
+<b><font size=4>This is our idea of confluence: "create a forum for ML practitioners can compete without pressure from scientific community"</b></font>.
+We have plans to organise and maintain <a href="livebench.html" target=main>contests</a> (constant evaluation of algorithms against known datasets).
+
+<br>
+<p> With our CEO clients, we start from the minimum gain objective of <b>+2%</b> in classification accuracy over baseline (best base classifier).
+In case that cannot be obtained, we charge less than basic fee from the client but if we get more (e.g. +4%) we charge more (which we think is fair)
+but if client does not want to pay for extra, we can 'worsen' the results accordingly. 
+In any case, we not only provide the software to run the projects but can explain why different classifiers solve different instances better.
+This may be of issue for some clients who want the training model to be fully explainable in 'common terms'.
+<b><font size=4>This is our end of the deal: "our objective is to client this minimum gain".</b></font>
+
+<br>
+<p> We also take robustness of training models seriously. This means that in contrast to WYSIWYG classification suites like Weka
+that rely on your own knowledge of machine-learning algorithms, we seek to ensure that the full data training models perform equally or nearly 
+as well (predictably) as they do in cross-validation (CV) tests. 
+This means that we do not (necessarily) perform stratified cross-validation for all datasets, if it is suspected that the found best classifier at CV
+might significantly degrade at true test. For this we will have a test batch confirming the test-readiness of our models, which involves
+measuring the divergence between training data and the incoming unseen test data, and taking corrective actions if it exceeds certain threshold.
+<b><font size=4>Motto would here be: "Finding best classifier at CV tests means absolutely nothing if another classifier can beat it at actual test situation". </font></b>
+
+<br>
+<p> In terms of openness and scientific objectivity, we want to assure the following: compared to many of the commercial DM suites, 
+<b><font size=4>we strive to be as open as possible with regard to our product description and pricing.</font></b>
+We call this 'whiteboxing' principle (which does not equal 'open source' of 'stupidity'). 
+Many suites often also preselect the datasets where their algorithm performs better than others and report those 
+(or even worse, do not report at all like KXEN.com). We do not have to do any such thing. 
+Our tool is by definition a gateway to the best (most accurate) classification accuracy, 
+first commercial suite ever to deploy (pre)selection with multiple classification algorithms.
+We will also tell you in detail how CEO did what it did to distance ourselves from 'blackboxes'.
+Same kind of transparency to a non-professional user can be achieved as with the popular decision tree algorithms.
+
+
+<p> <b> We think to contribute is to gain.</b> Machine learning benefits from openness as explained above. We have contributed Weka Online so you may want to as well.
+There are a number of ways for you to contribute and/or gain more out of your algorithm / resource / talent:
+
+<li> <b> We will make it possible for inventive programmers to upload their own proprietary classification algorithm</b>, 
+and reap him/herself the gain from CEO's 'clever ensembling method' and optionally have others reap the benefit of its relative strength. 
+Two ways to go about that: 
+(a) 'do not share': if you want just to make best of the speed of our supercluster implementation for your own algorithm. This carries a price
+since then you would be utilising our code and our resources but this is not as great a cost as buying CEO licence would be.
+(b) 'do share': if you want to contribute your algorithm to use by CEO algorithm > other users, that carries no price, rather the opposite.
+
+In either case, no copyright will be claimed by CEO to your algorithm nor do you then have copyright to CEO, 
+legally binding document will be drawn to effect that. 
+
+<li> <b> We at CEO are especially interested in non-Weka implementations of strong algorithms (either those implemented in Weka or not).</b> 
+A programmer that would be prepared to make such implementations (as per specification) would be rewarded for his/her efforts
+(either by free/reduced use of CEO and/or share of CEO stock). These are subject to detailed negotiation where the extent of the input is estimated.
+
+<!-- <p> <u>Running requirements</u>: The algorithm (or other useful utility for classification) only has to be runnable on our Apache web server (Perl, python, c++, Java etc) 
+and that the algorithm outputs the instance predictions in Weka predictions file syntax (so that we could deploy our results parsers directly
+but this is not absolutely required if you provide with such a parser). -->
+
+<!-- <p> NB: If you want, you can also make your own high-powered server (cluster) available for Weka Online users (including you).
+We do not expect to be running short of processing power even with a hundred concurrently running customers soon but more cannot hurt. 
+Part of sales revenue can be offered if we come to really need extra processing power (way to tie users down this too). -->
+
+</body>
+</html>
