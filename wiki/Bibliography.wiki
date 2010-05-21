@@ -11,7 +11,7 @@
   * Links
    # Upload files [http://encodable.com/filechucker/] This doesn't check the type of the file.
    # Example(Spanish link) [http://perlenespanol.com/tutoriales/cgi/perl_y_ajax.html]
-==JavaScript==
+==!JavaScript==
   * Links
    # Important functions(Spanish link) [http://www.maestrosdelweb.com/editorial/diez-funciones-imprescindibles-en-javascript/]
 ==Ruby== 
