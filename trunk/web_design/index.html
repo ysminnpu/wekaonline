@@ -22,7 +22,10 @@
 		height:200px;
 	}
 	#down{
-	
+		color:blue;
+		height:300px;
+		width:100%;
+		background-color:#336699;
 	}
 	#logincontain{
 		position:relative;
@@ -41,6 +44,10 @@
 		bottom:5px;	
 		
 	} 
+	#distance{
+		height:20px;
+		width:2px;	
+	}
 
 </style>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
@@ -48,10 +55,11 @@
 </head>
 <div id="wrapper">
 <div id="up"><img id="title_img" src="./images/title.png"/></div>
-<div id="center">	
+<div id="center">
+		<div id="distance"></div>	
 		<form id="logincontain">
 			Login: <input type="text" name="username">	
-			Password: <input type="text" name="password">
+			Password: <input type="password" name="password">
 			<div id="btaccept"><input type="submit" name="accept" value="Intro"></div>
 		</form>  	
 </div>
