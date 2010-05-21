@@ -17,6 +17,7 @@
              # Download dataset
              # Delete dataset
              # Apply filter in dataset
+             # Set private dataset
   * Experiments subsystem
      * Experiment Handler
              # Read Experiment
@@ -31,9 +32,25 @@
   * Rankings subsystem
   * Transactions subsystem
   * Users subsystem
+     * Users Handler
+             # Register
+                # Set Premium user
+             # Login
 
 =Descriptions=
 
 ==Dataset subsystem==
 ===Delete dataset===
 When someone try to delete a dataset the system will check if someone else used this dataset in any experiment. Then the system will send a notification to those users to say them if they want to host this dataset(we will say to them that it will disappear if they don't accept). If someone say yes the dataset will be rest from the used memory in the deleter user account and he will have more free space. Who accepted the notification to own the dataset will spend memory from his account and he will be the new owner. If nobody wants to accept the dataset we will keep the file in the database with the "removed" field "true".
+
+===Set private dataset===
+The premium user can change the visibility of own datasets. In this case nobody can see the private datasets, only the owner user. You can upload private files to the server if you are a premium user else (being free user)you will upload every dataset in public visibility.
+
+==User subsystem==
+===Register===
+The user will have to be registered to access to the tools that the webpage offer. So they can register himself through the registration web page. It will be needed to confirm the user registration by email. The login will be the email also. And the password will have to be secure. The fields that have to be fill are in the class diagram.(the user class). Note: When a user is registered we have to create the relation with the transaction table also(because he can use the GoGrid service).
+
+===Set Premium user===
+This use case extends of "Register" use case.Once the user is registered he can take the premium user by paying. It can be accessible easily from the WebPage. We will offer the new service that premium user offer if the client want to buy he will can do it. Then the user will change the profile to "PremiumUser". 
+
+==
