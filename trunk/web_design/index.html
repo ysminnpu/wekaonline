@@ -3,7 +3,7 @@
 <head>
 <style>
 
-/***************************LAYOUTS************************/
+/***************************MAIN LAYOUTS************************/
 	* {
 		margin:0;
 		padding:0;	
@@ -21,12 +21,6 @@
 		color:white;
 		height:200px;
 	}
-	#down{
-		color:blue;
-		height:300px;
-		width:100%;
-		background-color:#336699;
-	}
 	#logincontain{
 		position:relative;
 		padding:20px ;
@@ -36,18 +30,49 @@
 		width: 250px;
 		background-color:#6666CC;
 	}
+	#down{
+		position:relative;
+		color:white;
+		height:900px;
+		width:100%;
+		background-color:#336699;
+	}
+	#downfloat{
+		position:absolute;
+		top:10px;
+		left:10px;
+		background-color:yellow;
+		height:40px;
+		width:80%;	
+	}	
+
 	
-/***********************OTHER ITEMS*******************/
+/***********************OTHER AUXILIAR LAYOUTS*******************/
 	#btaccept{
 		position:absolute;
 		right:5px;
 		bottom:5px;	
 		
 	} 
+	#urlforgot{
+		position:absolute;
+		left:10px;
+		bottom:10px;	
+	}
 	#distance{
 		height:20px;
 		width:2px;	
 	}
+/****************************OTHER ITEMS**************************/
+	.miniurl{
+		font-size:10px;	
+		color:white;
+	}
+	.miniurl:hover{
+		font-style:bold;
+		color:yellow;	
+	}
+
 
 </style>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
@@ -58,12 +83,15 @@
 <div id="center">
 		<div id="distance"></div>	
 		<form id="logincontain">
-			Login: <input type="text" name="username">	
+			Login(email): <input type="text" name="username">	
 			Password: <input type="password" name="password">
+			<div id="urlforgot"><a href="./index.html?forgot" class="miniurl">I FORGOT IT  </a></div>
 			<div id="btaccept"><input type="submit" name="accept" value="Intro"></div>
 		</form>  	
 </div>
-<div id="down"></div>
+<div id="down">
+	<div id="downfloat"></div>
+</div>
 </div><!-- wrapper div -->
 
 <body>
