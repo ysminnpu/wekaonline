@@ -48,9 +48,7 @@ The premium user can change the visibility of own datasets. In this case nobody 
 
 ==User subsystem==
 ===Register===
-The user will have to be registered to access to the tools that the webpage offer. So they can register himself through the registration web page. It will be needed to confirm the user registration by email. The login will be the email also. And the password will have to be secure. The fields that have to be fill are in the class diagram.(the user class). Note: When a user is registered we have to create the relation with the transaction table also(because he can use the *Go Grid* service).
+The user will have to be registered to access to the tools that the webpage offer. So they can register himself through the registration web page. It will be needed to confirm the user registration by email. The login will be the email also. And the password will have to be secure. The fields that have to be fill are in the class diagram.(the user class). Note: When a user is registered we have to create the relation with the transaction table also(because he can use the *!GoGrid* service).
 
 ===Set Premium user===
-This use case extends of *Register* use case.Once the user is registered he can take the premium user by paying. It can be accessible easily from the WebPage. We will offer the new service that premium user offer if the client want to buy he will can do it. Then the user will change the profile to *PremiumUser*. 
-
-==
+This use case extends of *Register* use case.Once the user is registered he can take the premium user by paying. It can be accessible easily from the !WebPage. We will offer the new service that premium user offer if the client want to buy he will can do it. Then the user will change the profile to *!PremiumUser*. 
