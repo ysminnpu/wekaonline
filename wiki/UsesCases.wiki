@@ -5,7 +5,7 @@
     * Algorithms Handler
              # Add Algorithm
              # Delete Algorithm
-             # Load Algorithm
+             # Load Algorithm in the experiment
   * Challenges subsystem
     * Challenge Handler 
              # Create challenge
