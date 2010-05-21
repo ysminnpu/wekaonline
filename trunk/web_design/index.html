@@ -2,116 +2,60 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <style>
-	body{
-		background-color:#000000;
-	}
-	#upside{
-		height:93px;
-		width:100%;
-		margin:0px;
-		position:relative;
-	}
-	#center{
-		height:80%;
-		width:100%;
-		margin:0px;
-		position:relative;
-	}
-	#footer{
-		height:50px;
-		width:50px;;
-		background-color:#F33333;
-	}
-	#title{
-		width:375px;
-		height:93px;
-		background-image:url(./images/title.png);
-		position:absolute;
-		top:0px;
-		left:0px;
-	}
-	#head1{
-		height:93px;
-		background-image:url(./images/head.png);
-		position:absolute;
-		top:0px;
-		left:375px;
-		right:0px;	
-	}
-	#btrunexperiment{
-		position:relative;
-		top:26px;
-		left:30%;
-		text-align:center;
-		height:40px;
-		width:200px;
-	}
-	.floatbutton{
-		margin:5px;
-		font-family:"Courier New", Courier, monospace;
-		font-size:12px;
-		cursor:pointer;
-		position:relative;
-		right:5px;
-		background:#000066;
-		float:right;
-		padding:3px;
-		border:#000066;
-		color:blue;
-		background-image:url(./images/bgbuttons.png);
-	}
-	.floatbutton:hover{
-		color:#FF0000;
-	}
-	#menu{
-		float:left;
-		height:600px;
-		width:100px;
-		min-width:200px;
-		background-color:#3366FF;
-	}
-	#rightside{
-		float:right;
-		height:600px;
-		width:100px;
-		min-width:200px;
-		background-color:#3366FF;
-	}
-	#middleside{
-		min-width:200px;
-		margin:5px;
-		width:auto;
-		height:auto;
-		background-color:#3366FF;
-	}
-	#wrapper{
-		width:1000px;
-		margin:0px auto;
-			
+
+/***************************LAYOUTS************************/
+	* {
+		margin:0;
+		padding:0;	
 	}
 	
+	#wrapper{
+		margin:0px;
+		background-color:#000000;
+	}
+	#up{
+		height:93px;
+		background-image:url(./images/head.png) ;
+	}
+	#center{
+		color:white;
+		height:200px;
+	}
+	#down{
+	
+	}
+	#logincontain{
+		position:relative;
+		padding:20px ;
+		margin:auto;
+		float:center;
+		height: 120px;	
+		width: 250px;
+		background-color:#6666CC;
+	}
+	
+/***********************OTHER ITEMS*******************/
+	#btaccept{
+		position:absolute;
+		right:5px;
+		bottom:5px;	
+		
+	} 
+
 </style>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>Main page</title>
 </head>
 <div id="wrapper">
-
-<div id="upside">
-	<div id="title"></div>
-	<div id="head1">
-		<img id="btrunexperiment" src="./images/btrunexperiment.png" onmouseover="this.src='./images/btrunexperimentover.png'" onmouseout="this.src='./images/btrunexperiment.png'"/>
-		<div class="floatbutton">Sign Up</div>
-		<div class="floatbutton">Join Now</div>
-	</div>
+<div id="up"><img id="title_img" src="./images/title.png"/></div>
+<div id="center">	
+		<form id="logincontain">
+			Login: <input type="text" name="username">	
+			Password: <input type="text" name="password">
+			<div id="btaccept"><input type="submit" name="accept" value="Intro"></div>
+		</form>  	
 </div>
-
-<div id="center">
-	<div id="menu"></div>
-	<div id="leftside"></div>
-	<div id="middleside"></div>
-	<div id="rightside"></div>
-</div>
-<div id="footer">footer</div>
+<div id="down"></div>
 </div><!-- wrapper div -->
 
 <body>
