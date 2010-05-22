@@ -42,7 +42,7 @@
 =Descriptions=
 ==Algorithm subsystem==
 ===Show list of algorithms===
-The system will can show every accessible algorithms in a list. The user will can select that he wants. This set is composed of the algorithms that Weka provides and the algorithms that the user upload in the server(only the public algorithms). 
+The system will can show every accessible algorithms in a list. The user will can select that he wants. This set is composed of the algorithms that Weka provides and the algorithms that the users upload in the server(only the public algorithms). 
 ==Dataset subsystem==
 ===Delete dataset===
 When someone try to delete a dataset the system will check if someone else used this dataset in any experiment. Then the system will send a notification to those users to say them if they want to host this dataset(we will say to them that it will disappear if they don't accept). If someone say yes the dataset will be rest from the used memory in the deleter user account and he will have more free space. Who accepted the notification to own the dataset will spend memory from his account and he will be the new owner. If nobody wants to accept the dataset we will keep the file in the database with the "removed" field "true".
