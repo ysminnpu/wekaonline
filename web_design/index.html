@@ -1,6 +1,23 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/animatedcollapse.js">
+/***********************************************
+* Animated Collapsible DIV v2.4- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+***********************************************/
+</script>
+<script type="text/javascript">
+	animatedcollapse.addDiv('downfloat', 'fade=1,height=300px')
+	animatedcollapse.ontoggle=function($, divobj, state){ //fires each time a DIV is expanded/contracted
+		//$: Access to jQuery
+		//divobj: DOM reference to DIV being expanded/ collapsed. Use "divobj.id" to get its ID
+		//state: "block" or "none", depending on state
+	}
+	animatedcollapse.init()
+</script>
 <style>
 
 /***************************MAIN LAYOUTS************************/
@@ -38,12 +55,9 @@
 		background-color:#336699;
 	}
 	#downfloat{
-		position:absolute;
-		top:10px;
-		left:10px;
-		background-color:yellow;
-		height:40px;
-		width:80%;	
+		display:none;
+		width:300px;
+		color:yellow;
 	}	
 
 	
@@ -65,12 +79,21 @@
 	}
 /****************************OTHER ITEMS**************************/
 	.miniurl{
+		font-weight:bold;
 		font-size:10px;	
 		color:white;
+		
 	}
 	.miniurl:hover{
-		font-style:bold;
 		color:yellow;	
+	}
+	.strongurl{  
+		font-weight:bold;
+		color:white;
+		font-size:20px;	
+	}
+	.strongurl:hover{
+		color:yellow;
 	}
 
 
@@ -78,22 +101,32 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>Main page</title>
 </head>
+<body>
 <div id="wrapper">
 <div id="up"><img id="title_img" src="./images/title.png"/></div>
 <div id="center">
 		<div id="distance"></div>	
 		<form id="logincontain">
-			Login(email): <input type="text" name="username">	
-			Password: <input type="password" name="password">
+			<p>Login(email):</p> <p><input type="text" name="username"></p>	
+			<p>Password:</p> <p><input type="password" name="password"></p>
 			<div id="urlforgot"><a href="./index.html?forgot" class="miniurl">I FORGOT IT  </a></div>
-			<div id="btaccept"><input type="submit" name="accept" value="Intro"></div>
+			<div id="btaccept"><input type="submit" name="accept" value="Go Inside"></div>
 		</form>  	
 </div>
+<p><a class="strongurl" href="javascript:animatedcollapse.toggle('downfloat')">I don't have account so REGISTER</a></p>
 <div id="down">
-	<div id="downfloat"></div>
+	<div id="downfloat">
+		<form>
+			<p>Email*</p><input type="text" name="remail">
+			<p>Password*</p><input type="password" name="rpassword">
+			<p>Re-Password*</p><input type="password" name="rrepeatpassword">
+			<p>Name</p><input type="text" name="rname">
+			<p>Address</p><input type="text" name="raddress">
+			<p>Telephone</p><input type="text" name="rname">
+			<input type="submit" name="register" value="Register">		
+		</form>
+	</div>
 </div>
 </div><!-- wrapper div -->
-
-<body>
 </body>
 </html>
