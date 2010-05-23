@@ -39,6 +39,7 @@
              # Set Premium user
              # Login
              # Rescue the pass by email
+  * Documentation subsystem
 
 =Descriptions=
 ==Algorithm subsystem==
