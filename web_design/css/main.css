@@ -1,0 +1,64 @@
+/***************************MAIN LAYOUTS************************/
+	* {
+		margin:0;
+		padding:0;	
+	}
+	
+	#wrapper{
+		margin:0px;
+		background-color:#000000;
+	}
+	#up{
+		height:93px;
+		background-image:url(../images/head.png) ;
+	}
+	#center{
+		color:white;
+		height:600px;
+	}
+	#down{
+		position:relative;
+		color:white;
+		height:900px;
+		width:100%;
+		background-color:#336699;
+	}
+	
+/***********************OTHER AUXILIAR LAYOUTS*******************/
+	#btaccept{
+		position:absolute;
+		right:5px;
+		bottom:5px;	
+		
+	} 
+	#urlforgot{
+		position:absolute;
+		left:10px;
+		bottom:10px;	
+	}
+	#distance{
+		height:20px;
+		width:2px;	
+	}
+/****************************OTHER ITEMS**************************/
+	.miniurl{
+		font-weight:bold;
+		font-size:10px;	
+		color:white;
+		
+	}
+	.miniurl:hover{
+		color:yellow;	
+	}
+	.strongurl{  
+		font-weight:bold;
+		color:white;
+		font-size:20px;	
+	}
+	.strongurl:hover{
+		color:yellow;
+	}
+	
+	.withoutborder{
+		border:0px;	
+	}
