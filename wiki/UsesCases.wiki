@@ -52,6 +52,16 @@ When someone try to delete a dataset the system will check if someone else used 
 ===Set private dataset===
 The premium user can change the visibility of own datasets. In this case nobody can see the private datasets, only the owner user. You can upload private files to the server if you are a premium user else (being free user)you will upload every dataset in public visibility.
 
+==Experiment subsystem==
+===Run experiment===
+Steps:
+ # client sends the dataset from web interface, with algos he wants run
+ # we have a formhandler that inserts the dataset file name and classifiers into their spots in the rm xml file
+ # we execute this file
+-> output are either evaluation results or class predictions (or both)
+ # we attach another rm operator that inserts those results into mysql tables
+(attach into the rm template, last)
+ # we query database for what client has specified he wants to show
 ==User subsystem==
 ===Register===
 The user will have to be registered to access to the tools that the webpage offer. So they can register himself through the registration web page. It will be needed to confirm the user registration by email. The login will be the email also. And the password will have to be secure. The fields that have to be fill are in the class diagram.(the user class). Note: When a user is registered we have to create the relation with the transaction table also(because he can use the *!GoGrid* service).
