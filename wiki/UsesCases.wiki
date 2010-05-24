@@ -57,8 +57,7 @@ The premium user can change the visibility of own datasets. In this case nobody 
 Steps:
  # client sends the dataset from web interface, with algos he wants run
  # we have a formhandler that inserts the dataset file name and classifiers into their spots in the rm xml file
- # we execute this file
--> output are either evaluation results or class predictions (or both)
+ # we execute this file--> output are either evaluation results or class predictions (or both)
  # we attach another rm operator that inserts those results into mysql tables
 (attach into the rm template, last)
  # we query database for what client has specified he wants to show
