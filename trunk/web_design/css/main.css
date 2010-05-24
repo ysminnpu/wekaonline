@@ -13,6 +13,7 @@
 		background-image:url(../images/head.png) ;
 	}
 	#center{
+		position:relative;
 		color:white;
 		height:600px;
 	}
@@ -25,6 +26,7 @@
 	}
 	
 /***********************OTHER AUXILIAR LAYOUTS*******************/
+	/*****************/////////LOGIN//////////**********************************/
 	#btaccept{
 		position:absolute;
 		right:5px;
@@ -39,6 +41,34 @@
 	#distance{
 		height:20px;
 		width:2px;	
+	}
+	/*****************/////////SUMMARY//////////**********************************/
+	#leftfloatc{
+		position:relative;
+		color:white;
+		float:left;
+		width:200px;
+		height:600px;
+		background-color:#FFFFFF;
+	}
+	#downlfc{	
+		position:absolute;
+		top:410px;
+		left:10px;
+		background-color:#339999;	
+		width:200px;
+		height:100px;	
+	}
+	#uplfc{
+		position:absolute;
+		top:10px;
+		left:10px;
+		background-color:#333333;
+		width:200px;
+		height:400px;	
+	}
+	#rightfloatc{
+		float:right;
 	}
 /****************************OTHER ITEMS**************************/
 	.miniurl{
