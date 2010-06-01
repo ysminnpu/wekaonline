@@ -10,6 +10,9 @@
    # Installing MySQL in Ubuntu(Spanish link) [http://www.guia-ubuntu.org/index.php?title=MySQL#Instalaci.C3.B3n]
 
 =Programming Languages=
+==Php==
+  * Links
+   # CakePhP http://book.cakephp.org/view/8/What-is-CakePHP-Why-Use-it
 ==Perl and AJAX==
   * Links
    # Upload files [http://encodable.com/filechucker/] This doesn't check the type of the file.
