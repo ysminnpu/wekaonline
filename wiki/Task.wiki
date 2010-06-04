@@ -1,9 +1,9 @@
 #the task with most priority are here.
 
-=Create experiment web page=
+===Create experiment web page===
 Algorithm,
 Dataset,
-Crossvalidation [!checkbutton],
+Crossvalidation (checkbutton),
 folds,
 number of iterations 
 
