@@ -9,5 +9,4 @@
  * MySQL
  * Apache with php package
  * Weka
- * RapidMiner
-
+ * !RapidMiner
