@@ -1,0 +1,88 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="en-gb">
+<title>Weka Online Form </title>
+</head>
+
+<body bgcolor="#000000" text="#FFFFBF" vlink="#990002" link="#990001">
+
+<form name="formhandler" method="post"
+ action="http://compbio.mds.qmw.ac.uk/cgi-bin/ceo/cascade2.pl"
+enctype="multipart/form-data"> 
+
+<h1> <a href="http://www.cs.waikato.ac.nz/~ml/weka/">Weka</a> Online <img src="Title-Bird-Header.gif" align=center></h1> 
+
+<body>
+
+<p> Please have a quick read of <a href="documentation.pdf" target="main">instructions</a>.
+
+<br>
+<br>
+
+<table border=3 width=62% cols=2 bgcolor=#990000>
+
+<h3> Dataset </h3>
+<p> Here's a directory of <a href="http://www.ceodelegates.com/samples-arff/" target="main">sample ARFF datasets</a> from UCI library for you to download!
+
+<tr>
+<td>
+<input type="file" value="Browse" name="dataset-train" checked><br> 
+
+</tr>
+
+</table>
+<br>
+<table border=3 width=62% cols=2 bgcolor=#990000>
+<h3> Classifiers</h3>
+<p> We provide a couple of semi-strong classifiers in the below textarea. 
+You could also try some that are often even stronger from <a href="clineup.html" target="main">this sample list of recommended strong classifiers per dataset type</a> !
+NB: If you leave empty line as last line, that too will be run (we will fix that later) and will obviously result in 0.000 accuracy.
+<tr><td>
+<textarea name="classifiers" cols="76" rows="4" wrap="off">
+weka.classifiers.bayes.NaiveBayes
+weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+weka.classifiers.trees.J48 -C 0.25 -M 2
+weka.classifiers.trees.SimpleCart -S 1 -M 2.0 -N 5 -C 1.0
+</textarea></td>
+</tr>
+
+</table>
+</select>
+
+<br>
+<font size=3>
+<table border=3 width=62% cols=2 bgcolor=#990004>
+<tr>
+<h3> User information </h3> 
+<p> NB: Do not use slash '/', whitespace ' ' or '_' in user or project names (e.g. MyName, MyProject not 'My Name', 'My Project', 'My_Project'). 
+You should also use a descriptive project name (instead of 'test' use e.g. 'dataset-name-run-1'). 
+You can use the same project name over and over but if you're then using the same classifiers the first run will not get overridden 
+(but new ones will be appended to the project). 
+<td> User 
+<td>	<input type="text" name="name" size="40"><br>
+</tr>
+<tr> <td> Project <td><input type="text" name="project" size="40"><br></td>
+<tr> <td> E-mail <td><input type="text" name="email" size="40"><br> 
+</table>
+<p> If you want a notification of when project is finished (recommended for large datasets), fill in your email address.
+<br> This email address will not be used to any other purpose than this.
+<br>
+<p> Ok phew we're getting now ready to run Weka Online with classifiers you chose on the dataset. 
+<br><a href="password.html" target=main>Passwords</a> are required so make sure you have them before you send.
+
+<!-- 
+<p> <input type=checkbox name="donotshare"> I do not wish my project to be public (all project files will be sent to you and then erased). 
+<br><input type=checkbox name="createmodel"> Create training model of the full data (if you want it to be provided to you, INACTIVE YET). 
+<br><input type=checkbox name="sendfiles"> Send Weka result files via email to me.
+
+-->
+
+<br><br> DUE TO A MALICIOUS ATTACK ON OUR SERVER ON 25-07, SUBMISSION PAGE HAS BEEN TEMPORARILY DISABLED. 
+MORE NEWS ON News!
+
+</form>
+
+</body>
+</html>

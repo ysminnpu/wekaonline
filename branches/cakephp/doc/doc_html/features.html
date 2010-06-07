@@ -1,0 +1,46 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="en-gb">
+<title>CEO Online</title>
+</head>
+
+<body bgcolor="#000000" text="#FFFFBF" vlink="#990002" link="#990001">
+
+<h1> Features of CEO and Weka Online </h1> 
+
+<p> Weka Online & CEO already implement the following:
+	<li> Speed (confirmed 8-10 times faster than Weka on a single processor of same Java memory) 
+	owing to supercluster integration <img src="Green_check.png"> 
+	<li> Weka model testing modes (10-fold cross-validation <img src="Green_check.png">, 
+	later ability to set the number of folds as well as testing the model on separate test file) </li>
+	<li> Combined output from commandline, Explorer and Experimenter interfaces in one run (partially <img src="Green_check.png">)
+	<li> Project management interface (not very useful now but will be <img src="Green_check.png">) </li>
+	<li> Email notification of finished project with link to results  <img src="Green_check.png">
+	<li> Storage of client project results, ARFFs and results per folds
+
+<br><br>
+<p> The following are under construction: 
+
+	<li> Submitting multiple ARFFs (e.g. a whole folder full) on multiple classifiers (cf. Experimenter)</li>
+	<li> Assessing how much time a project takes before running it by comparing the dataset to our benchmarks.</li>
+	<li> Customisable outputs (from CSV to xxx), so even local implementations is possible </li> 
+	<li> Allowing non-identical source files for one classification task (e.g. SCOP vs CATH on proteins) </li> 
+	<li> We also provide standard access to individual test folds, as ARFFs and as results.
+
+<br><br>
+
+<p> CEO algorithm as opposed to Weka Online (see <a href="basics.html" target=main>Basics</a>) will contain these: 
+	<li> +2-4% in classification accuracy (we have learned to hush-hush over what does that -> white paper to selected clients only!)
+	<li> Other cross-validation options than stratified (substratified), provable to ensure robustness</li>
+	<li> Apriori best algorithm selection scheme BAS, reduces learning time to minimum </li>
+	<li> Informed classifier optimisation with nonlinear grid search into multiple parameters </li>
+	<li> Storage of client training models </li>
+
+
+<!-- <img src="underconstruct2.jpg" width=40 height=40> -->
+<!-- 	<li> Dataset statistical / analytical utility (e.g. accuracies at classes of different 'nature') </li> -->
+
+</body>
+</html>
