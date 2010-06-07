@@ -1,0 +1,13 @@
+<gogrid>
+  <response method="/grid/ip/list" status="success">
+    <summary total="5" start="0" returned="5"/>
+    <list>
+      <object name="ip">
+        <attribute name="id">138806</attribute>
+        <attribute name="ip">216.121.62.37</attribute>
+        <attribute name="subnet">216.121.62.32/255.255.255.240</attribute>
+        <attribute name="public">true</attribute>
+      </object>
+    </list>
+  </response>
+</gogrid>

@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/animatedcollapse.js">
+/***********************************************
+* Animated Collapsible DIV v2.4- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+***********************************************/
+</script>
+<script type="text/javascript">
+	animatedcollapse.addDiv('downfloat', 'fade=1,height=300px')
+	animatedcollapse.ontoggle=function($, divobj, state){ //fires each time a DIV is expanded/contracted
+		//$: Access to jQuery
+		//divobj: DOM reference to DIV being expanded/ collapsed. Use "divobj.id" to get its ID
+		//state: "block" or "none", depending on state
+	}
+	animatedcollapse.init()
+	
+	/*function authentication(){
+		$.ajax('/API/authentication',
+		{user:, password:},
+		method='POST');
+			
+		$.ajaxForm('formid', url, function(data, error){
+			if (data == true){
+				
+			}else{
+				$('div_notif').innerHTML = 'Usuario incorrecto';
+			}
+		});
+		
+	}*/
+</script>
+<style>
+
+/***************************MAIN LAYOUTS************************/
+	* {
+		margin:0;
+		padding:0;	
+	}
+	
+	#wrapper{
+		margin:0px;
+		background-color:#000000;
+	}
+	#up{
+		height:93px;
+		background-image:url(./images/head.png) ;
+	}
+	#center{
+		color:white;
+		height:200px;
+	}
+	#logincontain{
+		position:relative;
+		padding:20px ;
+		margin:auto;
+		float:center;
+		height: 120px;	
+		width: 250px;
+		background-color:#6666CC;
+	}
+	#down{
+		position:relative;
+		color:white;
+		height:900px;
+		width:100%;
+		background-color:#336699;
+	}
+	#downfloat{
+		margin:10px;
+		display:none;
+		width:300px;
+		color:yellow;
+	}	
+
+	
+/***********************OTHER AUXILIAR LAYOUTS*******************/
+	#btaccept{
+		position:absolute;
+		right:5px;
+		bottom:5px;	
+		
+	} 
+	#urlforgot{
+		position:absolute;
+		left:10px;
+		bottom:10px;	
+	}
+	#distance{
+		height:20px;
+		width:2px;	
+	}
+/****************************OTHER ITEMS**************************/
+	.miniurl{
+		font-weight:bold;
+		font-size:10px;	
+		color:white;
+		
+	}
+	.miniurl:hover{
+		color:yellow;	
+	}
+	.strongurl{  
+		font-weight:bold;
+		color:white;
+		font-size:20px;	
+	}
+	.strongurl:hover{
+		color:yellow;
+	}
+
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Login or Register</title>
+</head>
+<body>
+<div id="wrapper">
+<div id="up"><img id="title_img" src="./images/title.png"/></div>
+<div id="center">
+		<div id="distance"></div>	
+		<form id="logincontain">
+			<p>Login(email):</p> <p><input type="text" name="username"></p>	
+			<p>Password:</p> <p><input type="password" name="password"></p>
+			<div id="urlforgot"><a href="./index.html?forgot" class="miniurl">I FORGOT IT  </a></div>
+			<div id="btaccept"><input type="submit" name="accept" value="Go Inside"></div>
+		</form>  	
+</div>
+<p><a class="strongurl" href="javascript:animatedcollapse.toggle('downfloat')">I don't have account so REGISTER</a></p>
+<div id="down">
+	<div id="downfloat">
+		<form>
+			<p>Email*</p><input type="text" name="remail">
+			<p>Password*</p><input type="password" name="rpassword">
+			<p>Re-Password*</p><input type="password" name="rrepeatpassword">
+			<p>Name</p><input type="text" name="rname">
+			<p>Telephone</p><input type="text" name="rname">
+			<p>Address</p><input type="text" name="raddress">
+			<p><input type="submit" name="register" value="Register"></p>		
+		</form>
+	</div>
+</div>
+</div><!-- wrapper div -->
+</body>
+</html>
