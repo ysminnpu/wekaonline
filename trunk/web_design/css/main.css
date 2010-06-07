@@ -1,0 +1,94 @@
+/***************************MAIN LAYOUTS************************/
+	* {
+		margin:0;
+		padding:0;	
+	}
+	
+	#wrapper{
+		margin:0px;
+		background-color:#000000;
+	}
+	#up{
+		height:93px;
+		background-image:url(../images/head.png) ;
+	}
+	#center{
+		position:relative;
+		color:white;
+		height:600px;
+	}
+	#down{
+		position:relative;
+		color:white;
+		height:900px;
+		width:100%;
+		background-color:#336699;
+	}
+	
+/***********************OTHER AUXILIAR LAYOUTS*******************/
+	/*****************/////////LOGIN//////////**********************************/
+	#btaccept{
+		position:absolute;
+		right:5px;
+		bottom:5px;	
+		
+	} 
+	#urlforgot{
+		position:absolute;
+		left:10px;
+		bottom:10px;	
+	}
+	#distance{
+		height:20px;
+		width:2px;	
+	}
+	/*****************/////////SUMMARY//////////**********************************/
+	#leftfloatc{
+		position:relative;
+		color:white;
+		float:left;
+		width:200px;
+		height:600px;
+		background-color:#FFFFFF;
+	}
+	#downlfc{	
+		position:absolute;
+		top:410px;
+		left:10px;
+		background-color:#339999;	
+		width:200px;
+		height:100px;	
+	}
+	#uplfc{
+		position:absolute;
+		top:10px;
+		left:10px;
+		background-color:#333333;
+		width:200px;
+		height:400px;	
+	}
+	#rightfloatc{
+		float:right;
+	}
+/****************************OTHER ITEMS**************************/
+	.miniurl{
+		font-weight:bold;
+		font-size:10px;	
+		color:white;
+		
+	}
+	.miniurl:hover{
+		color:yellow;	
+	}
+	.strongurl{  
+		font-weight:bold;
+		color:white;
+		font-size:20px;	
+	}
+	.strongurl:hover{
+		color:yellow;
+	}
+	
+	.withoutborder{
+		border:0px;	
+	}
