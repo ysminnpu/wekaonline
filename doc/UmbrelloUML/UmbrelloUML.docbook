@@ -312,6 +312,11 @@
               <para>
       Rolename: 
     dataset</para>
+              <para>public</para>
+              <para/>
+              <para>
+      Rolename: 
+    (none)</para>
             </section>
             <row>
               <entry role="info-title" namest="c1" nameend="c3">Attributes:</entry>
@@ -1306,6 +1311,11 @@
             <section>
               <title>Associations</title>
               <para>visibility, type, properties.</para>
+              <para>public</para>
+              <para/>
+              <para>
+      Rolename: 
+    (none)</para>
               <para>public</para>
               <para/>
               <para>
